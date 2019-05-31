@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add ruby-bundler ansible
+RUN apk add ruby-bundler ruby-dev ansible build-base
 RUN adduser -S ci_user
 
 USER ci_user
